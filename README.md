@@ -14,6 +14,7 @@ the first thing I did was to replace all the primes with -infinity, OUR pyramid 
 -inf 6 9
 
 8 -inf 9 -inf
+
 we won't touch the base of the pyramid, so we keep 
 
 8 -inf 9 -inf 
