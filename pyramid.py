@@ -1,6 +1,7 @@
 import numpy as np 
 
 # function to test if a number is prime or not
+
 def is_primer(n) :
     if n <= 1 :
         return False
@@ -20,7 +21,7 @@ m = [np.inf] * NumberOfLine #initailize a list with the minus infinite value
 for i in range(NumberOfLine):
     m[i]= text[i].split() #  "0 1 2 3 4 5 6 7 8 9" => ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
-
+m = [[1], [8,4], [2, 6, 9],[0, 0, 0,3],[2, 2, 2,2,9]]
 for i in range(len(m)):
     for j in range(len(m[i])):
         m[i][j]=int(m[i][j]) #convert all elements of the list to integer 
@@ -49,16 +50,13 @@ else: #there is no line that contains only prime numbers
     
 #cpt is the number of the line where we will stop
  
-#Step 4: there are two cases to deal with: can we move in two directions or 3? 
-
-for i in range(cpt,0,-1): # move from the bottom to the top of the pyramid
-  
-  for j in range(len(m[i])-1,0,-1): # go through the pyramid from right to left
-   
-    if j==1: # if we are in the first column of the pyramid we have only two possible directions
-        m[i-1][j-1]=m[i-1][j-1]+max([m[i][j-1],m[i][j]])
-        
-    else: #for the other columns of the pyramid we have three possible directions
-        m[i-1][j-1]=m[i-1][j-1]+max([m[i][j-1],m[i][j],m[i][j-2]])
+for i in range(len(m[i])-1,0,-1): # move from the bottom to the top of the pyramid
+    print("niveau "+str(i))
+    if(m[i].count(-np.Inf)!=len(m[i])) :
+        for j in range(0,len(m[i-1])): # go through the pyramid from right to left
+            if max([m[i][j+1],m[i][j]]) != -np.Inf :
+                m[i-1][j]=m[i-1][j]+max([m[i][j+1],m[i][j]]) 
+            #print(m)
+    
 #Step 5: find the longest path       
 print(m[0][0]) #the top of the pyramid is the maximum value
