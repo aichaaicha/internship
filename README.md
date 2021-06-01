@@ -23,7 +23,7 @@ we won't touch the base of the pyramid, so we keep
 
 8  -inf  9  -inf 
 
-THEN, we take the node 9 which is in the 3 rd line, it has three possible paths, that is -inf 9 -inf , we take the maximum element of these 3 and we add it with the node 9, we do the same thing for the 6 to which we add 9 which is the max of 8 -inf 9 AND FINALLY THE SAME FOR -inf which we will add to 8 which is the max of 8 -inf.
+THEN, we take the node 9 which is in the 3 rd line, it has two possible directions, that is  9 -inf , we take the maximum element of these 2 and we add it with the node 9, we do the same thing for the 6 to which we add 9 which is the max of -inf 9 AND FINALLY THE SAME FOR -inf which we will add to 8 which is the max of 8 -inf.
 The 3rd line of the pyramid becomes:
 
 -inf  15  18 
