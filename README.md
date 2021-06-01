@@ -13,7 +13,7 @@ the first thing I did was to replace all the primes with -infinity, OUR pyramid 
 
 1
 
-8 -inf
+8 4
 
 -inf 6 9
 
