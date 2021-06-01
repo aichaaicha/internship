@@ -1,8 +1,12 @@
 The idea is to go through the pyramid from the bottom to the top
 Let's take the example we have:
+
 1
+
 8 4
+
 2 6 9
+
 8 5 9 3
 
 the first thing I did was to replace all the primes with -infinity, OUR pyramid becomes:
