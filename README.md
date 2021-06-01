@@ -7,8 +7,11 @@ Let's take the example we have:
 
 the first thing I did was to replace all the primes with -infinity, OUR pyramid becomes:
 1
+
 8 -inf
+
 -inf 6 9
+
 8 -inf 9 -inf
 we won't touch the base of the pyramid, so we keep 8 -inf 9 -inf 
  THEN, we take the node 9 which is in the 3 rd line, it has three possible paths, that is -inf 9 -inf , we take the maximum element of these 3 and we add it with the node 9, we do the same thing for the 6 to which we add 9 which is the max of 8 -inf 9 AND FINALLY THE SAME FOR -inf which we will add to 8 which is the max of 8 -inf.
